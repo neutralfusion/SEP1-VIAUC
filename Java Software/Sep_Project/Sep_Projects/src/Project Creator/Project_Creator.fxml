@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox userData="projectCreator" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="45.0" prefWidth="349.0">
+         <children>
+            <Label text="Project Creator">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="349.0">
+         <children>
+            <Button onAction="#manageRequirement" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="210.0" text="Manage Requirements">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="349.0">
+         <children>
+            <Button onAction="#ManageProject" minWidth="-Infinity" mnemonicParsing="false" prefWidth="210.0" text="Manage Projects">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="64.0" prefWidth="349.0">
+         <children>
+            <Button onAction="#ManageTask" minWidth="-Infinity" mnemonicParsing="false" prefWidth="210.0" text="Manage Tasks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="87.0" prefWidth="349.0">
+         <children>
+            <Button onAction="back" mnemonicParsing="false" text="Back">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

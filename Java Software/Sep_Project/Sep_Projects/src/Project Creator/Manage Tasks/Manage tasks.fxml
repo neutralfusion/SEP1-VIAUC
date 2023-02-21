@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:controller="controller.manageTaskController" userData="Manage Tasks" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label text="Search:">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="id"/>
+               </children>
+            </HBox>
+            <HBox prefHeight="263.0" prefWidth="600.0">
+               <children>
+                  <Accordion />
+                  <TableView fx:id="tasksView" prefHeight="287.0" prefWidth="600.0">
+                     <columns>
+                        <TableColumn fx:id="taskId" prefWidth="84.6666589975357" text="Id" />
+                        <TableColumn fx:id="status" prefWidth="178.66666412353516" text="Status" />
+                        <TableColumn fx:id="name" minWidth="0.0" prefWidth="332.6665954589844" text="Task" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="80.0" text="Add" onAction="#add"/>
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="80.0" text="Remove"onAction="#remove" />
+                  <Button layoutX="62.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="80.0" text="Edit" onAction="#edit"/>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefWidth="80.0" text="Back" onAction="#back"/>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
